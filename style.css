@@ -1,0 +1,643 @@
+body{
+    background:url(img/background.png);
+    margin:0px;
+    padding:0px;
+    font-family:cambria;
+    color:#424242;
+}
+p{
+    margin:0px;
+}
+a{
+    color:black;
+    text-decoration:none;
+}
+main{
+    margin:30px auto;
+    max-width:1170px;
+    width:100%;
+    position:relative;
+}
+/*header*/
+header{
+    background:#fff;
+    padding: 1px 0px;
+    height: 50px;
+    box-shadow: 0px -5px 10px black;
+    width:100%;
+}
+header>div{
+    margin: 0px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 1170px;
+}
+header>div .logo{
+    float: left;
+    margin-top: -15px;
+    margin-left: 10px;
+}
+header nav .menu{
+    text-align:center;
+}
+header nav .menu li{
+    list-style:none;
+    display:inline;
+    padding: 5px 10px;
+    font-style:italic;
+    font-size: 17px;
+}
+header nav .menu li:after{
+    content:"/";
+    margin-left:20px;
+}
+header nav .menu li:last-of-type:after{
+    content:"";
+    margin-left:20px;
+}
+header nav .menu li a.card:hover{
+   background: url("img/icon-card.png") no-repeat scroll 136px 2px;
+   padding-right: 25px;
+}
+header nav .menu li a.slots:hover{
+   background: rgba(0, 0, 0, 0) url("img/menu-icon.png") no-repeat scroll -62px -6px;
+   padding-right: 25px;
+}
+header nav .menu li a.casino:hover{
+   background: rgba(0, 0, 0, 0) url("img/menu-icon.png") no-repeat scroll -284px -6px;
+   padding-right: 25px;
+}
+header nav .menu li a.poker:hover{
+   background: rgba(0, 0, 0, 0) url("img/menu-icon.png") no-repeat scroll -470px -6px;
+    padding-right:35px;
+}
+header nav .menu li a.roulette:hover{
+   background: rgba(0, 0, 0, 0) url("img/menu-icon.png") no-repeat scroll -572px -6px;
+   padding-right:30px;
+}
+/*end header*/
+/*aside*/
+aside{
+    width:20%;
+    float:right;
+    min-width:360px;
+    padding-right:10px;
+    right:0;
+}
+aside .discus, aside .news, aside .popular{
+    position:relative;
+}
+.zag{
+    position: relative;
+    z-index: 1;
+    margin: 0px auto;
+    padding: 0px 20px;
+    background: url("img/background.png");
+    text-align: center;
+    font-size:17pt;
+    font-style:italic;
+    width:60%;
+}
+aside .news .zag{
+    width:30%;
+}
+aside hr{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 9px;
+}
+aside .discus-zag h4, aside .discus-zag p:last-child{
+    font-family:calibri;
+    text-transform:uppercase;
+    color:#797979;
+}
+aside .discus-text{
+    font-family:calibri
+}
+aside .discus-zag h4{
+    font-weight:normal;
+    margin:0;
+    color:#424242;
+} 
+
+aside .discus-zag p{
+    margin:0;
+    color:#424242;
+}
+aside .discus>div{
+    background:url(img/poker.png) no-repeat 0px 1px;
+    height:175px;
+    margin-bottom:19px;
+    position:relative;
+    border-bottom: 1px solid #A2A2A2;
+    padding-bottom: 20px;
+}
+
+aside .discus .discus-zag{
+    position: absolute;
+    width: 52%;
+    right: 0px;
+}
+aside .discus .discus-text{
+    position: absolute;
+    bottom: 25px;
+    right: 0px;
+    width: 44%;
+}
+aside .discus .zag{
+    margin-bottom:25px;
+}
+aside .discus>div:hover{
+    background:url(img/poker_hover.png) no-repeat;
+    cursor:pointer;
+}
+aside .discus .discus-text p{
+    color:#424242;
+    margin:0px;
+}
+aside .discus>div:last-child{
+    border-bottom:none;
+}
+aside .news div p{
+    float:right;
+    margin:0;
+}
+aside .news div{
+    padding: 15px 0px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #A2A2A2;
+    color: #696969;
+    font-family:calibri;
+}
+aside .news div.last{
+    border:none;
+}
+
+aside .popular{
+    margin:0 auto;
+}
+aside .popular ul{
+    text-align:center;
+    padding:0px;
+    
+}
+aside .popular ul li{
+    display:inline-block;
+    padding:5px;
+    border:1px solid #A2A2A2;
+    margin:5px;
+}
+/*end aside*/
+/*main*/
+.main{
+    width:64%;
+    padding:0 10px;
+    font-family:calibri;
+    font-size:18px;
+    float:left;
+}
+.main h1{
+    font-size: 21px;
+    font-style: italic;
+    background: rgb(29, 29, 29) none repeat scroll 0% 0%;
+    color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom:10px;
+}
+.main .block>.first{
+    margin-top:20px;
+    padding-top:20px;
+}
+.main .block .first:first-letter{
+    display:block;
+    float:left;
+    border-top:4px solid #585858;
+    border-bottom:4px solid #585858;
+    font-size:80px;
+    margin-right:10px;
+    padding:10px;
+    text-align:center;
+    font-weight:bold;
+    margin-top:-10px;
+    
+}
+.main .slider{
+    margin:10px auto ;
+}
+.main .block .button{
+    margin-bottom:60px;
+}
+.block .social p, .block-video .social p{
+    float:left;
+    margin-right:10px;
+}
+.block .comment{
+    float: right;
+    width:140px;
+    margin-top:-15px;
+}
+
+.block .comment p:first-letter {
+    font-size:30px;
+    font-weight:bold;
+}
+.comment_block{
+    margin: 0px auto -20px;
+    width: 200px;
+    text-align: center;
+    background: transparent url("img/background.png") repeat scroll 0% 0%;
+}
+.comment_block p{
+    font-style:italic;
+    font-family:cambria;
+}
+.comment_block p span{
+    display: inline-block;
+    font-size: 40px;
+    font-family: arial;
+    font-weight: bold;
+    float: left;
+    margin-left: 25px;
+    margin-top: -10px;
+}
+.block, .block-video{
+    border-bottom: 1px solid #A2A2A2;
+    padding-bottom:10px;
+    
+}
+
+.block-video{
+    margin-top:30px;
+    padding:0 0px 10px;
+}
+.block-video ul li>img{
+    float:left;
+    margin-right:20px;
+    position: relative;
+    width:50%;
+}
+.block-video .right{
+    padding-top: 100px;
+    position: relative;
+    height:250px;
+}
+.block-video h2{
+    font-size: 19px;
+    font-style: italic;
+    background: #1D1D1D none repeat scroll 0% 0%;
+    color: #FFF;
+    padding: 8px 15px;
+    font-weight: normal;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    margin: 15px;
+    right: 0px;
+    width: 49%;
+    box-shadow: 0px 0px 2px black;
+}
+.block-video .block-zag,.block-video .desc{
+    text-transform:uppercase;
+    font-size: 14px;
+}
+.block-video .text{
+    font-size:17px;
+}
+.block-video .block-zag{
+    margin-bottom:20px;
+}
+.block-video .desc{
+    margin-bottom:10px;
+}
+.block-video .social a img{
+    display:inline-block;
+}
+.block-video .social, .block-video .comment{
+    padding-top:20px;
+}
+.block-video .comment{
+    margin-top:0;
+    float:right;
+    background: url("img/comment.png") no-repeat 0px 25px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+
+.slider{
+    position:relative;
+    overflow:hidden;
+}
+.slider .background{
+    position: absolute;
+    left: 0px;
+    width: 40px;
+    background: #1C1C1C;
+    height: 200px;
+    z-index: 990;
+    top:0;
+}
+.block_comment{
+    margin:40px 0 0;
+    border-bottom: 1px solid rgb(162, 162, 162);
+    padding:0 0 30px;
+}
+.block_comment_item{
+    border-bottom: 1px solid rgb(162, 162, 162);
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+.block_comment_item:last-child{
+    border-bottom: none;
+}
+.block_comment_item:nth-child(2n){
+    margin-left:100px;
+}
+.block_comment_item .author{
+    width:40%;
+}
+.block_comment_item .author img{
+    float: left;
+    border-radius: 40px;
+    margin: -10px 5px 10px;
+}
+.block_comment_item .author .name{
+    font-style: italic;
+    font-size: 20px;
+}
+.block_comment_item .author .date{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.block_comment_item .comment_text{
+    clear:both;
+}
+.form_comment{
+    margin-top:30px;
+}
+.form_comment .zag{
+    top:-45px;
+    width:40%;
+}
+.form_comment form{
+    text-align:center;
+}
+.form_comment form textarea{
+    width: 97%;
+    height: 110px;
+    margin-bottom: 20px;
+    border: 1px solid #a2a2a2;
+    padding: 10px;
+}
+.form_comment form .input_item{
+    padding: 5px;
+    width: 30%;
+    border: 1px solid #A2A2A2;
+}
+.form_comment form .input_item.first_item{
+    float:left;
+}
+.form_comment form .input_item.last_item{
+    float:right;
+}
+.form_comment form input.button{
+    padding: 10px 5px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left:none;
+    border-right:none;
+    display: block;
+    text-align: center;
+    font-size: 10pt;
+    text-transform: uppercase;
+    margin: 25px auto;
+    color: #424242;
+    font-style: italic;
+    background: transparent url("img/background.png") repeat scroll 0% 0%;
+}
+.form_comment form input.button:hover{
+    cursor:pointer;
+    background: #15100D;
+    color: #fff;
+}
+::-webkit-input-placeholder {font-style:italic;}
+::-moz-placeholder          {font-style:italic;}/* Firefox 19+ */
+:-moz-placeholder           {font-style:italic;}/* Firefox 18- */
+:-ms-input-placeholder      {font-style:italic;}
+/*end main*/
+/*footer*/
+footer{
+    background:#1C1C1C;
+    color:#9B9B9B;
+    padding:15px;
+    font-size:12px;
+    text-align:center;
+    margin-top:80px;
+}
+footer>div{
+    max-width:1130px;
+    text-align:left;
+    margin:0 auto;
+}
+footer a{
+    color:#9B9B9B;
+    margin-right:5px;
+}
+footer p{
+    text-transform:uppercase;
+}
+footer span.copy{
+    font-weight:bold;
+    margin-right:20px;
+}
+
+/*end footer*/
+
+a.button{
+    padding: 10px 20px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: block;
+    width: 165px;
+    text-align: center;
+    font-size: 14pt;
+    text-transform: uppercase;
+    margin: 25px auto;
+    color: #424242;
+    font-style: italic;
+}
+a.button:hover{
+    background: #15100D;
+    color: #fff;
+}
+.italic{
+    font-style:italic;
+}
+.bold{
+    font-weight:bold;
+}
+.clear{
+    clear:both;
+}
+
+@media screen and (max-width:1100px){
+    .block-video{
+    padding:0 40px 10px;
+}
+    .main{
+        width:61%
+    }
+    .block-video .block-zag{
+        padding-top:15px;
+    }
+    footer{
+        margin-top:0px;
+    }
+}
+@media screen and (max-width:1080px){
+    header > div .logo{
+        float:none;
+        margin:0 auto;
+    }
+    header{
+        height:100px;
+    }
+}
+@media screen and (max-width:1050px){
+    .main{
+        width:59%
+    }
+}
+@media screen and (max-width:975px){
+    .main{
+        width:55%
+    }
+    footer p{
+        text-align:center;
+    }
+    footer span.copy{
+        display:block;
+    }
+    .block-video .social p{
+        float:none;
+    }
+}
+@media screen and (max-width:950px){
+    header{
+        height:237px;
+    }
+    header nav .menu li{
+        display:block;
+        border-bottom: 1px solid #A2A2A2;
+    }
+    header nav .menu li:after{
+        content:"";
+    }
+    header nav .menu{
+        padding:0;
+        margin-top:0;
+    }
+    .block-video .block-zag{
+        padding-top:40px;
+    }
+}
+@media screen and (max-width:900px){
+    .main{
+        width:53%
+    }
+}
+@media screen and (max-width:830px){
+
+ .main{
+    float:none;
+    width:90%;
+    padding:0;
+    margin:0 auto
+ }
+ aside{
+    position:relative;
+    width:100%;
+    padding-right: 0;
+    margin-left:0;
+ }
+ aside .discus{
+    float:left;
+    width:360px;
+ }
+ aside .news, aside .popular{
+    margin-left: 370px;
+    width:47%;
+ }
+ aside .zag{
+    width:61%;
+ }
+ .block-video .block-zag{
+    padding-top:0;
+ }
+}
+@media screen and (max-width:700px){
+    aside .discus{
+        float:none;
+        margin:0 auto;
+    }
+    aside .news, aside .popular{
+        margin: 0px auto;
+        width:90%;
+    }
+    .bx-wrapper .bx-prev{
+        top:30% !important;
+    }
+    .block_comment_item .author img{
+        float:none;
+    }
+    .form_comment .zag{
+        width:50%;
+        font-size:110%;
+    }
+}
+@media screen and (max-width:500px){
+    
+    .form_comment .zag{
+        font-size:100%;
+        width:60%;
+    }
+    .form_comment form .input_item{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .form_comment form .input_item.fitst_item, .form_comment form .input_item.last_item{
+        float:none;
+    }
+    
+}
+@media screen and (max-width:450px){
+    body{
+        overflow-x:hidden;
+    }
+    .block .comment{
+        float: none;
+        width: 150px;
+        margin: 0 auto;
+    }
+    .block .social{
+        width:150px;
+        margin:0 auto;
+        
+    }
+    .block-video{
+        display:none;
+    }
+    .bx-wrapper .bx-prev{
+        top:20% !important;
+    }
+}
+@media screen and (max-width:380px){
+    aside .discus{
+        display:none;
+    }
+        aside .news, aside .popular{
+        display:none;
+    }
+}
